@@ -1,0 +1,21 @@
+<html ng-app="modulesApp">
+    <head>
+        <title>Modules App</title>
+        <link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+        <script src="../js/angular.js"></script>
+        <script src="../js/modules.js"></script>
+        <script src="../js/supermodule.js"></script>
+        <script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+    </head>
+    <body>
+        <h1>Modules App</h1>
+        <div ng-controller="SuperCtrl as ctrl">
+            {{ctrl.helloMessage}}
+        </div>
+        <div ng-controller="MainCtrl as ctrl1">
+            <tags-input ng-model="ctrl1.tags"></tags-input>
+        </div>
+
+
+    </body>
+</html>
